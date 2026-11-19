@@ -9,3 +9,7 @@ def test_t2_senha_com_11_caracteres():
 
 def test_t3_senha_vazia():
     assert senha_valida("") is False
+
+
+def test_t4_senha_somente_espacos():
+    assert senha_valida("            ") is False
